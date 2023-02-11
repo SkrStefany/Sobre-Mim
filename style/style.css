@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family= Krona+One & display = swap');
+@import url('https://fonts.googleapis.com/css2?family= Montserrat & display = swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    /*background-image:linear-gradient( #6523b6, rgb(233, 121, 140) );*/
+    background-color: black;
+   /* color: #000000;*/
+   color:white;
+}
+
+.cabecalho{
+padding: 2% 0 0 15% ;
+}
+
+.menu{
+    display: flex;
+    gap: 80px;
+}
+
+.hs{
+    font-family:'Montserrat' ;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.apresentacao{
+    /* margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    padding: 3% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo{
+    width: 50%;
+}
+
+.titulo{
+    font-size: 1.5rem;
+    font-family: 'Krona One';
+    color: rgb(147, 4, 160);
+}
+
+strong {
+    color: rgb(147, 4, 160);
+}
+
+.paragrafo{
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+}
+
+.botao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.botao-subtitulo{
+    font-family: 'Krona One';
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.link{
+    border: 2px dotted #6612ce;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 14px  0;
+    text-decoration: none;
+    color: rgb(255, 251, 251);
+    font-family: 'Montserrat';
+    
+
+}
+
+img{
+    height: 500px;
+    width: 500px;
+}
+
+.rodape{
+    padding: 24px;
+    text-align: center;
+    color:black;
+    background-color: #6612ce;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width:1200px) {
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .cabecalho{
+        padding: 10%;
+    }
+    .menu{
+        justify-content:center ;
+    }
+    .conteudo{
+        width: auto;
+    }
+}
